@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>遊びプラン</title>
+  <title>お品書き</title>
 
   <style>
     body {
@@ -48,31 +48,44 @@
 
 <body>
 
-  <h2>遊びプラン</h2>
+  <h2>お品書き</h2>
+  <div>もっと気軽にひとを誘える世界線があればいいと思いませんか？<br>
+    ということでメニューはこちらでご準備しました。
+  </div>
 
   <div class="card">
-    <div class="title">休日ランチ</div>
+    <div class="title">朝からヒーコー☕</div>
 
     <div class="desc">
-      渋谷や表参道でゆっくりランチ。<br>
-      カフェ巡りでもOK。
+      朝から"おしゃれな"カフェ行ってQOL高めるやつ
     </div>
 
-    <button onclick="sendDM('休日ランチ')">
-      提案する
+    <button onclick="sendDM('朝からヒーコー☕')">
+      DMでリクエストを送る
     </button>
   </div>
 
   <div class="card">
-    <div class="title">映画とご飯</div>
+    <div class="title">まったりピクニック🌳</div>
 
     <div class="desc">
-      映画を観たあとにご飯。<br>
-      夜の時間帯を想定しています。
+      都内のきれいめでか公園でゆっくりまったりパン食べたい
     </div>
 
-    <button onclick="sendDM('映画とご飯')">
-      提案する
+    <button onclick="sendDM('まったりピクニック🌳')">
+      DMでリクエストを送る
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="title">第n回カタン大会🎲</div>
+
+    <div class="desc">
+      そろそろ誰が一番か決めましょうか
+    </div>
+
+    <button onclick="sendDM('第n回カタン大会🎲')">
+      DMでリクエストを送る
     </button>
   </div>
 
@@ -80,7 +93,7 @@
     function sendDM(menu) {
       const text =
 `【遊びリクエスト】
-${menu}に興味あります！`;
+${menu}したい！`;
 
       const url =
 "https://www.instagram.com/direct/new/?text="
